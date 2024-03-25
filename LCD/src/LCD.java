@@ -13,15 +13,15 @@ public class LCD {
         brightness = 0;
         cableIndex = 0;
     }
-
+    // Digunakan untuk mengubah status jadi on
     public void turnOn() {
         status = "On";
     }
-
+    // Digunakan untuk mengubah status jadi on
     public void turnOff() {
         status = "Off";
     }
-
+    // untuk mengubah status menjadi "Freeze", mengatur volume ke 51, brightness ke 38, dan memilih kabel HDMI.
     public void Freeze() {
         status = "Freeze";
     }
@@ -29,11 +29,11 @@ public class LCD {
     public void setVolume(int vol) {
         volume = vol;
     }
-
+    // dalam program utama untuk menaikkan volume
     public void volumeUp() {
         volume ++;
     }
-
+    // untuk mengatur tingkat kecerahan layar LCD.
     public void setBrightness(int level) {
         brightness = level;
     }
@@ -47,7 +47,7 @@ public class LCD {
             cableIndex = option;
         }
     }
-
+    // Untuk mengeluarkan hasil atau output
     public void displayMessage() {
         System.out.println("LCD Status: " + status);
         System.out.println("Volume: " + volume); // Ubah pesan menjadi "Volume: "
